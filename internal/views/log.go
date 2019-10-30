@@ -9,8 +9,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell"
 	"github.com/rs/zerolog/log"

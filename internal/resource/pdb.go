@@ -3,7 +3,7 @@ package resource
 import (
 	"strconv"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/rs/zerolog/log"
 	v1beta1 "k8s.io/api/policy/v1beta1"
 	"k8s.io/apimachinery/pkg/util/intstr"

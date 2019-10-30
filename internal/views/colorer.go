@@ -3,8 +3,8 @@ package views
 import (
 	"strings"
 
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/gdamore/tcell"
 	"k8s.io/apimachinery/pkg/watch"
 )

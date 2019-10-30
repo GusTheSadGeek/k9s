@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 )
 
 const (

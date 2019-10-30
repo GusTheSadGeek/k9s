@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/rs/zerolog/log"
 	appsv1 "k8s.io/api/apps/v1"
 )

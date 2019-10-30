@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/apimachinery/pkg/watch"
 )

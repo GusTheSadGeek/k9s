@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 )
 
 // TableListener tracks tabular data changes.

@@ -3,7 +3,7 @@ package ui
 import (
 	"fmt"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/derailed/tview"
 )
 

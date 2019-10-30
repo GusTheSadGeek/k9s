@@ -5,8 +5,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	m "github.com/petergtz/pegomock"
 	"github.com/stretchr/testify/assert"
 	metav1beta1 "k8s.io/apimachinery/pkg/apis/meta/v1beta1"

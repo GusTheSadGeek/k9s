@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/rs/zerolog/log"
 	"gopkg.in/yaml.v2"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

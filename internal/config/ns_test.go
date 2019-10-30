@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	m "github.com/petergtz/pegomock"
 	"github.com/stretchr/testify/assert"
 )

@@ -3,8 +3,8 @@ package resource_test
 import (
 	"testing"
 
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	m "github.com/petergtz/pegomock"
 	"github.com/stretchr/testify/assert"
 	batchv1beta1 "k8s.io/api/batch/v1beta1"

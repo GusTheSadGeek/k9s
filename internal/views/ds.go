@@ -1,9 +1,9 @@
 package views
 
 import (
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

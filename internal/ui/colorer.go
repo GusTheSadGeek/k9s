@@ -1,7 +1,7 @@
 package ui
 
 import (
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	"github.com/gdamore/tcell"
 	"k8s.io/apimachinery/pkg/watch"
 )

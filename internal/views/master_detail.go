@@ -3,8 +3,8 @@ package views
 import (
 	"context"
 
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/derailed/tview"
 )
 

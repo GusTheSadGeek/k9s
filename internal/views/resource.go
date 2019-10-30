@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/atotto/clipboard"
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
-	"github.com/derailed/k9s/internal/ui/dialog"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/ui/dialog"
 	"github.com/gdamore/tcell"
 	"github.com/rs/zerolog/log"
 )

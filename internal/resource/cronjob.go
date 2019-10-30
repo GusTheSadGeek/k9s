@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/rs/zerolog/log"
 	batchv1beta1 "k8s.io/api/batch/v1beta1"
 )

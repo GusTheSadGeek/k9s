@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell"
 )

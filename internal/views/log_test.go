@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/derailed/tview"
 	"github.com/stretchr/testify/assert"
 )

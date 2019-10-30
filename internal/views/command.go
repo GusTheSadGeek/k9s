@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/rs/zerolog/log"
 )
 

@@ -3,7 +3,7 @@ package resource
 import (
 	"strings"
 
-	"github.com/derailed/k9s/internal/color"
+	"github.com/GusTheSadGeek/k9s/internal/color"
 )
 
 type (

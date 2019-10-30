@@ -3,8 +3,8 @@ package views
 import (
 	"sigs.k8s.io/yaml"
 
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/gdamore/tcell"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

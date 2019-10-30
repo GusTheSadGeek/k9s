@@ -4,7 +4,7 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/derailed/tview"
 	"github.com/fsnotify/fsnotify"
 	"github.com/rs/zerolog/log"

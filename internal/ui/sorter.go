@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	res "k8s.io/apimachinery/pkg/api/resource"
 	"vbom.ml/util/sortorder"
 )

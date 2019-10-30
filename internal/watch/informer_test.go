@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	m "github.com/petergtz/pegomock"
 	"gotest.tools/assert"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

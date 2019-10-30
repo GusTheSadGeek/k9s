@@ -10,7 +10,7 @@ import (
 
 	"github.com/derailed/tview"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/rs/zerolog/log"
 )
 

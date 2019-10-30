@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell"
 	"github.com/rs/zerolog/log"
@@ -46,7 +46,7 @@ type (
 // NewFlashView returns a new flash view.
 func NewFlashView(app *tview.Application, m string) *FlashView {
 	f := FlashView{app: app, TextView: tview.NewTextView()}
-	f.SetTextColor(tcell.ColorAqua)
+	f.SetTextColor(tcell.ColorDarkSlateGray)
 	f.SetTextAlign(tview.AlignLeft)
 	f.SetBorderPadding(0, 0, 1, 1)
 	f.SetText("")
@@ -109,6 +109,7 @@ func (v *FlashView) setMessage(level FlashLevel, msg ...string) {
 		width = 100
 	}
 	m := strings.Join(msg, " ")
+	v.SetBackgroundColor(tcell.ColorGray)
 	v.SetTextColor(flashColor(level))
 	v.SetText(resource.Truncate(flashEmoji(level)+" "+m, width-3))
 }

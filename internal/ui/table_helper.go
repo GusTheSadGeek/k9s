@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	"github.com/rs/zerolog/log"
 )
 

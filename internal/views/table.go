@@ -1,7 +1,7 @@
 package views
 
 import (
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/gdamore/tcell"
 )
 

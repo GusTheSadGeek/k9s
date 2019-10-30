@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	m "github.com/petergtz/pegomock"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"

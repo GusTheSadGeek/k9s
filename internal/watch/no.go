@@ -3,7 +3,7 @@ package watch
 import (
 	"fmt"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	wv1 "k8s.io/client-go/informers/core/v1"
 	"k8s.io/client-go/tools/cache"

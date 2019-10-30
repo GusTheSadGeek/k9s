@@ -8,10 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell"
+
+	// "github.com/ktr0731/go-fuzzyfinder/matching"
 	"github.com/rs/zerolog/log"
 	"github.com/sahilm/fuzzy"
 	"k8s.io/apimachinery/pkg/util/duration"
@@ -99,7 +101,7 @@ func (v *Table) selChanged(r, c int) {
 
 	cell := v.GetCell(r, c)
 	v.SetSelectedStyle(
-		tcell.ColorBlack,
+		tcell.ColorCornsilk, //tcell.ColorBlack,  // todo
 		cell.Color,
 		tcell.AttrBold,
 	)
@@ -184,6 +186,7 @@ func (v *Table) keyboard(evt *tcell.EventKey) *tcell.EventKey {
 	}
 
 	if a, ok := v.actions[key]; ok {
+		log.Debug().Msgf(">> TableView handled %s", tcell.KeyNames[key])
 		return a.Action(evt)
 	}
 

@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/derailed/k9s/internal/color"
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/color"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/spf13/cobra"
 )
 

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/rs/zerolog/log"
 	autoscalingv2beta2 "k8s.io/api/autoscaling/v2beta2"
 )

@@ -9,9 +9,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/derailed/k9s/internal/color"
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/watch"
+	"github.com/GusTheSadGeek/k9s/internal/color"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/watch"
 	"github.com/rs/zerolog/log"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"

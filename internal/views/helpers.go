@@ -5,7 +5,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/gdamore/tcell"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"

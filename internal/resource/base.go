@@ -6,8 +6,8 @@ import (
 	"errors"
 	"path"
 
-	"github.com/derailed/k9s/internal/k8s"
-	"github.com/derailed/k9s/internal/watch"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/watch"
 	"github.com/rs/zerolog/log"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

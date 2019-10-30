@@ -1,8 +1,9 @@
 package views
 
 import (
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell"
 )
@@ -14,15 +15,15 @@ type selectList struct {
 	actions ui.KeyActions
 }
 
-func newSelectList(parent loggable) *selectList {
+func newSelectList(app *appView, parent loggable) *selectList {
 	v := selectList{List: tview.NewList(), actions: ui.KeyActions{}}
 	{
 		v.parent = parent
 		v.SetBorder(true)
-		v.SetMainTextColor(tcell.ColorWhite)
+		v.SetMainTextColor(config.AsColor(app.Styles.Frame().Menu.FgColor))
 		v.ShowSecondaryText(false)
-		v.SetShortcutColor(tcell.ColorAqua)
-		v.SetSelectedBackgroundColor(tcell.ColorAqua)
+		v.SetShortcutColor(config.AsColor(app.Styles.Frame().Menu.FgColor))
+		v.SetSelectedBackgroundColor(config.AsColor(app.Styles.Frame().Menu.FgColor))
 		v.SetTitle(" [aqua::b]Container Selector ")
 		v.SetInputCapture(func(evt *tcell.EventKey) *tcell.EventKey {
 			if a, ok := v.actions[evt.Key()]; ok {

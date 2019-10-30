@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/assert"
 	v1 "k8s.io/api/core/v1"

@@ -3,8 +3,8 @@ package ui
 import (
 	"context"
 
-	"github.com/derailed/k9s/internal/config"
-	"github.com/derailed/k9s/internal/k8s"
+	"github.com/GusTheSadGeek/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/internal/k8s"
 	"github.com/derailed/tview"
 	"github.com/gdamore/tcell"
 )

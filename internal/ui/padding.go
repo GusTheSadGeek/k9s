@@ -5,7 +5,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/derailed/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
 	"k8s.io/apimachinery/pkg/util/duration"
 )
 

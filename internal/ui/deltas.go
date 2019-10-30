@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	res "github.com/derailed/k9s/internal/resource"
+	res "github.com/GusTheSadGeek/k9s/internal/resource"
 	"k8s.io/apimachinery/pkg/api/resource"
 )
 

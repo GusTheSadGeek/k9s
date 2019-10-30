@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/derailed/k9s/internal/resource"
-	"github.com/derailed/k9s/internal/ui"
-	"github.com/derailed/k9s/internal/watch"
+	"github.com/GusTheSadGeek/k9s/internal/resource"
+	"github.com/GusTheSadGeek/k9s/internal/ui"
+	"github.com/GusTheSadGeek/k9s/internal/watch"
 	"github.com/gdamore/tcell"
 	"github.com/rs/zerolog/log"
 	v1 "k8s.io/api/core/v1"
@@ -37,7 +37,7 @@ func newPodView(title, gvr string, app *appView, list resource.List) resourceVie
 	v.extraActionsFn = v.extraActions
 	v.enterFn = v.listContainers
 
-	picker := newSelectList(&v)
+	picker := newSelectList(app, &v)
 	{
 		picker.setActions(ui.KeyActions{
 			tcell.KeyEscape: {Description: "Back", Action: v.backCmd, Visible: true},

@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/derailed/k9s/cmd"
-	"github.com/derailed/k9s/internal/config"
+	"github.com/GusTheSadGeek/k9s/cmd"
+	"github.com/GusTheSadGeek/k9s/internal/config"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
