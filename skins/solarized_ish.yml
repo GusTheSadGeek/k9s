@@ -1,0 +1,50 @@
+k9s:
+  body:
+    fgColor: cornflowerblue
+    bgColor: blanchedalmond
+    logoColor: indigo
+  info:
+    fgColor: red
+    sectionColor: rosybrown
+  frame:
+    border:
+      fgColor: red # rosybrown
+      focusColor: lime #red
+    menu:
+      fgColor: darkslategray
+      keyColor: cornflowerblue
+      numKeyColor: cornflowerblue
+    crumbs:
+      fgColor: darkslategray
+      bgColor: red # cornsilk
+      activeColor: gray
+    status:
+      newColor: darkslategray
+      modifyColor: indigo
+      addColor: slategray
+      errorColor: red
+      highlightcolor: lime
+      killColor: red
+      completedColor: gray
+    title:
+      fgColor: lime
+      highlightColor: gray
+      counterColor: plum
+      filterColor: gray
+  table:
+    fgColor: darkslategray
+    bgColor: cornsilk
+    cursorColor: yellow
+    header:
+      fgColor: darkgray
+      bgColor: cornsilk
+      sorterColor: lime
+  views:
+    yaml:
+      keyColor: darkslategray # ghostwhite
+      colorColor: slategray
+      valueColor: gray # navajowhite
+    logs:
+      fgColor: darkslategray
+      bgColor: cornsilk
+      
