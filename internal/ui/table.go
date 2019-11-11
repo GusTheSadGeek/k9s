@@ -44,6 +44,7 @@ type Table struct {
 	selectedRow  int
 	selectedFn   func(string) string
 	selListeners []SelectedRowFunc
+	marks        map[string]bool
 }
 
 // NewTable returns a new table view.
@@ -55,6 +56,7 @@ func NewTable(title string, styles *config.Styles) *Table {
 		cmdBuff:   NewCmdBuff('/', FilterBuff),
 		baseTitle: title,
 		sortCol:   SortColumn{0, 0, true},
+		marks:     make(map[string]bool),
 	}
 
 	v.SetFixed(1, 0)
@@ -171,6 +173,20 @@ func (v *Table) GetSelectedItem() string {
 	return v.selectedItem
 }
 
+// GetSelectedItems return currently marked or selected items names.
+func (v *Table) GetSelectedItems() []string {
+	if len(v.marks) > 0 {
+		var items []string
+		for item, marked := range v.marks {
+			if marked {
+				items = append(items, item)
+			}
+		}
+		return items
+	}
+	return []string{v.GetSelectedItem()}
+}
+
 func (v *Table) keyboard(evt *tcell.EventKey) *tcell.EventKey {
 	key := evt.Key()
 	if key == tcell.KeyRune {
@@ -196,6 +212,11 @@ func (v *Table) keyboard(evt *tcell.EventKey) *tcell.EventKey {
 // GetData fetch tabular data.
 func (v *Table) GetData() resource.TableData {
 	return v.data
+}
+
+// GetFilteredData fetch filtered tabular data.
+func (v *Table) GetFilteredData() resource.TableData {
+	return v.filtered()
 }
 
 // SetBaseTitle set the table title.
@@ -321,6 +342,7 @@ func (v *Table) buildRow(row int, data resource.TableData, sk string, pads MaxyP
 	if v.colorerFn != nil {
 		f = v.colorerFn
 	}
+	m := v.isMarked(sk)
 	for col, field := range data.Rows[sk].Fields {
 		header := data.Header[col]
 		field, align := v.formatCell(data.NumCols[header], header, field+Deltas(data.Rows[sk].Deltas[col], field), pads[col])
@@ -329,6 +351,9 @@ func (v *Table) buildRow(row int, data resource.TableData, sk string, pads MaxyP
 			c.SetExpansion(1)
 			c.SetAlign(align)
 			c.SetTextColor(f(data.Namespace, data.Rows[sk]))
+			if m {
+				c.SetBackgroundColor(config.AsColor(v.styles.Table().MarkColor))
+			}
 		}
 		v.SetCell(row, col, c)
 	}
@@ -524,4 +549,13 @@ func (v *Table) SortInvertCmd(evt *tcell.EventKey) *tcell.EventKey {
 	v.Refresh()
 
 	return nil
+}
+
+// ToggleMark toggles marked row
+func (v *Table) ToggleMark() {
+	v.marks[v.GetSelectedItem()] = !v.marks[v.GetSelectedItem()]
+}
+
+func (v *Table) isMarked(item string) bool {
+	return v.marks[item]
 }
